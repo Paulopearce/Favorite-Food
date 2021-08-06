@@ -52,3 +52,9 @@ table {
 .logoText {
   width: fit-content;
 }
+
+@media only screen and (max-width: 576px) {
+  .logoText {
+    font-weight: bold;
+  }
+}
