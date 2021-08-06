@@ -50,5 +50,5 @@ table {
 }
 
 .logoText {
-  font-size: 3.6vw;
+  width: fit-content;
 }
