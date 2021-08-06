@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Food</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper green accent-3">
+      <a class="brand-logo">My Favorite Food</a>
+      
+    </div>
+  </nav>
+  <img class="materialboxed me" width="650" src="beyond-meat.png">
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>BEYOND BURGER®</div>
+      <div class="collapsible-body">
+        <img src="https://www.beyondmeat.com/wp-content/uploads/MainProductPage_Image_3-0Burger_1080x1080_V1.jpg" class="pictures"/>
+        <br>
+        <br>
+        <span>The latest and greatest Beyond Burger. It's everything a burger is. It's everything a burger has always been. For your
+      health, for your planet, for your bbq.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>BEYOND MEATBALLS™</div>
+      <div class="collapsible-body">
+        <img src="https://www.beyondmeat.com/wp-content/uploads/MainProductPage_Image_BeyondMeatballs_1080x1080_V1.jpg"
+          class="pictures" />
+        <br>
+        <br>
+        <span>Pre-formed and ready to cook, these plant-based meatballs are a convenient, nutritious and satisfying addition to any
+      meal. Find it in the meat aisle.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>BEYOND BEEF®</div>
+      <div class="collapsible-body">
+        <img src="https://www.beyondmeat.com/wp-content/uploads/BeyondBeef_PKG_Render_734x553-1.png"
+          class="pictures" />
+        <br>
+        <br>
+        <span>The freedom and versatility to turn any recipe into a meaty plant-based masterpiece. Find it in the meat aisle.</span></div>
+    </li>
+  </ul>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, {});
+      });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems, {});
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function () {
+        $('.materialboxed').materialbox();
+      });
+  
+</script>
+  
+</body>
+</html>
